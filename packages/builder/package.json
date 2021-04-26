@@ -1,0 +1,29 @@
+{
+  "name": "@unicorn-ui/builder",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Liam.Li <liam.li@avepoint.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/builder.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "bin": {
+    "unicorn-builder": "./lib/builder.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "ts-loader": "^9.1.1",
+    "webpack": "^5.35.1"
+  }
+}
