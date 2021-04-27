@@ -1,9 +1,9 @@
 {
-  "name": "@unicorn-ui/button",
+  "name": "@unicorn-ui/unicorn",
   "version": "0.0.1",
   "description": "> TODO: description",
-  "author": "Liam.Li <liam.li@avepoint.com>",
-  "homepage": "",
+  "author": "lzj822 <lizhongjie822@outlook.com>",
+  "homepage": "https://github.com/lzj822/unicorn-ui#readme",
   "license": "ISC",
   "main": "lib/index.tsx",
   "directories": {
@@ -16,11 +16,19 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzj822/unicorn-ui.git"
+  },
   "scripts": {
     "build": "unicorn-builder",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
+  "bugs": {
+    "url": "https://github.com/lzj822/unicorn-ui/issues"
+  },
   "dependencies": {
+    "@unicorn-ui/button": "^0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.32.11",
@@ -29,6 +37,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
     "@unicorn-ui/builder": "^0.0.1"
   }
 }

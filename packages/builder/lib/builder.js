@@ -6,7 +6,7 @@ const path = require('path');
 
 const config = {
     mode: "production",
-    entry: "./lib/index.ts",
+    entry: "./lib/index.tsx",
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
@@ -18,11 +18,18 @@ const config = {
         rules: [{
             test: /\.tsx?$/,
             use: 'ts-loader'
+        }, {
+            test: /\.s[ac]ss$/i,
+            use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader'
+            ]
         }]
     }
 }
 
 webpack(config, (err, status) => {
-    console.log(err);
+    console.log(err, status);
 });
 
